@@ -95,12 +95,7 @@ def daily_timeline(selected_user,df):
 
     return daily_timeline
 
-def week_activity_map(selected_user,df):
 
-    if selected_user != 'overall':
-        df = df[df['users'] == selected_user]
-
-    return df['day_name'].value_counts()
 def week_activity_map(selected_user,df):
 
     if selected_user != 'overall':
